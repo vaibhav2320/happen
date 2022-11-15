@@ -1,7 +1,4 @@
-*********************************
-Name : Sonawane Vaibhav Vishwanath
-Roll No. : 3249
-*********************************
+
                                                                          Practical No ::5
 Named PL/SQL Block: PL/SQL Stored Procedure and Stored Function.Write a Stored Procedure namely proc_Grade for the categorization of student. If marks scored by students in examination is <=1500 and marks>=990 then student will be placed in distinction category if marks scored are between 989 and900 category is first class, if marks899and 825 category is Higher Second Class. Write a PL/SQLblock to use procedure created with above requirement. Stud_Marks(name,total_marks) Result(Roll,Name, Class)
 
