@@ -1,0 +1,134 @@
+*********************************
+Name :Sonawane Vaibhav Vishwanath
+Roll No. : 3249
+*********************************
+
+/*                                                                 Practical No:8
+Database Connectivity:
+Write a program to implement MySQL/Oracle database connectivity with any front end language to implement Database navigationoperations (add, delete, edit etc.)     
+
+Database connectivity code:
+
+*/
+
+package connectivity;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+/*                                                                 Practical No:8
+Database Connectivity:
+Write a program to implement MySQL/Oracle database connectivity with any front end language to implement Database navigationoperations (add, delete, edit etc.)     
+
+Database connectivity code:
+
+*/
+import java.util.Scanner;
+
+
+public class javasql {
+  
+    
+	public static void main(String[] args)
+	{
+		Connection con=null;
+		Statement stmt=null;
+		
+        ResultSet rs = null;
+		try
+        {   
+             Scanner sc=new Scanner(System.in);
+        	
+        	Class.forName("com.mysql.cj.jdbc.Driver");
+        	con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Student","root","Samrat@2003");
+        	
+        	System.out.println(con.getClass());
+            stmt=con.createStatement();
+           
+            String sql="Select * from Student.stud"; 
+            //String sql="INSERT INTO Student.Stud VALUES ('3249', 'Sonawane Vaibhav', '100');";
+            //String sql="DELETE FROM `Student`.`Stud` WHERE (`RollNo` = '3249')";
+            //String sql="UPDATE `Student`.`Stud` SET `Marks` = '23' WHERE (`RollNo` = '3249');"
+            stmt.executeLargeUpdate(sql);
+            rs=stmt.executeQuery(sql);
+            //stmt.executeLargeUpdate(sql2);
+            //rs=stmt.executeQuery(sql2);
+             	
+        }
+        catch( ArithmeticException e)
+        {
+       	  e.printStackTrace();
+        }
+        catch(NullPointerException r)
+        {
+        	r.printStackTrace();
+        }
+        catch(SQLException d)
+        {
+        	d.printStackTrace();
+        }
+        catch(NumberFormatException f)
+        {
+        	f.printStackTrace();
+        }
+        catch(ClassNotFoundException n)
+        {
+        	
+        	System.out.println("Class not found");
+        }
+        
+        finally
+        {
+        	try
+        	{
+        		rs.close();
+        	}
+        	catch(NullPointerException g)
+        	{
+        		System.out.println("database is empty");
+        	}
+        	 catch(SQLException d)
+            {
+            	d.printStackTrace();
+            }
+        	
+        	try
+        	{
+        		stmt.close();
+        		
+        	}
+        	catch(NullPointerException g)
+        	{
+        		System.out.println("Bus is not available");
+        	}
+        	 catch(SQLException d)
+            {
+            	d.printStackTrace();
+            }
+        	try
+        	{
+        	    con.close();
+        	    
+        	}
+        	catch(NullPointerException g)
+        	{
+        		System.out.println("Connection is not established");
+        	}
+        	 catch(SQLException d)
+            {
+            	d.printStackTrace();
+            }
+        	
+        }
+        
+        } 
+  
+       
+	}      	        
+
+	
+
+
+                                                            
