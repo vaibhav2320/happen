@@ -1,7 +1,4 @@
-*********************************
-Name : Sonawane Vaibhav Vishwanath 
-Roll No. : 3249
-*********************************
+
 Enter password: ***********
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 8
