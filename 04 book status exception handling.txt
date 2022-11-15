@@ -1,7 +1,4 @@
-*********************************
-Name : Sonawane Vaibhav Vishwanath
-Roll No. : 3249
-*********************************     
+ 
                                                                  Practical No :4
 Unnamed PL/SQLcode block: Use of Control structure and Exception handling is mandatory.
 Suggested Problem statement:
