@@ -1,8 +1,4 @@
-*********************************
-Name : Sonawane Vaibhav Vishwanath
-Roll No. : 3249
-*********************************
-                                                            Practical No :9
+                Practical No :9
 
        Title: Design and Develop MongoDB Queries using CRUD operations.(UseCRUDoperations, SAVE method, logical operators etc.). 
 
