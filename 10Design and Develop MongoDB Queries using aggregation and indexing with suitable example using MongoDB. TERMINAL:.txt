@@ -1,7 +1,4 @@
-*********************************
-Name : Sonawane Vaibhav Vishwanath
-Roll No. : 3249
-*********************************
+
                                                               Practical No:10
 
            Problem Statement: Design and Develop MongoDB Queries using aggregation and indexing with suitable example using MongoDB.
