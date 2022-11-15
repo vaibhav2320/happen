@@ -1,7 +1,4 @@
-*********************************
-Name : SSonawane Vaibhav Vishwanath
-Roll No. : 3249
-*********************************
+
                                                                Practical No : 6
                                                                
 Cursors:(All types: Implicit, Explicit, Cursor FOR Loop, Parameterized Cursor)
