@@ -1,4 +1,4 @@
-//TestJNI.java Code
+//TestJNI.java Code           javac TestJNI.java  2.javah -jni TestJNI  4. java -Djava.library .path=. TESTJNI  
 import java.util.*;
 public class TestJNI{
     static{
