@@ -1,0 +1,42 @@
+//PageReplacment.java
+import java.util.*;
+public class PageReplacement {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int ch;
+        do{
+            System.out.println("1-FCFS");
+            System.out.println("2-LRU");
+            System.out.println("3-Optimal");
+            System.out.println("4-Exit");
+            System.out.println("Enter Your Choice :");
+            ch = input.nextInt();
+            switch (ch) {
+                case 1:
+                    FCFS fcfs = new FCFS();
+                    fcfs.execute();
+                    break;
+                
+                case 2:
+                    LRU lru = new LRU();
+                    lru.execute();
+                    break;
+                
+                case 3:
+                    Optimal optimal = new Optimal();
+                    optimal.execute();
+                    break;
+
+                case 4:
+                    break;
+
+                default:
+                    System.out.println("Oops!!Wrong Choice");
+                    break;
+            }
+        }while(ch!=4);
+        input.close();
+    }
+}
+
